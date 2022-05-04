@@ -13,6 +13,6 @@ do
 title=$(cut -d "," -f $column nondata.txt | head -n 1)
 t="$title".txt""
 echo $t
-cut -d "," -f 1 nondata.txt > $t
+cut -d "," -f $column nondata.txt > $t
 done
 
